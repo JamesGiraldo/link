@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require style
+ *= require font-awesome
+ */
+ @import "bootstrap";
+ @import "toastr/toastr.min.css";
+ * {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+ .ir-arriba{
+   display: none;
+   padding: 20px;
+   background: #fcae70;
+   font-size: 20px;
+   color: #fff;
+   cursor: pointer;
+   position: fixed;
+   bottom: 35px;
+   right: 20px;
+   border-radius: 35px;
+   background: url('flecha.png');
+   background-size: cover;
+ }
+ .ir-arriba:hover{
+   border: 2px solid #fcae70;
+   -webkit-box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
+   -moz-box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
+   box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
+ }
