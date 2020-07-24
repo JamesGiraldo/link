@@ -10,13 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_24_041531) do
+ActiveRecord::Schema.define(version: 2020_07_24_194425) do
 
   create_table "clientes", force: :cascade do |t|
     t.string "nombre"
     t.string "email"
     t.bigint "telefono"
     t.string "ciudad"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "imagenes", force: :cascade do |t|
+    t.string "avatar"
+    t.string "title"
+    t.text "description"
+    t.integer "slider_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["slider_id"], name: "index_imagenes_on_slider_id"
+  end
+
+  create_table "sliders", force: :cascade do |t|
+    t.string "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

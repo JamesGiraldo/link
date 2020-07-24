@@ -10,6 +10,14 @@ crumb :new_subcriptor do |sus|
   link "SUSCRIPCIÓN", new_cliente_path(sus)
 end
 
+crumb :imagenes do
+  link "SLAIDERS", imagenes_path
+end
+
+crumb :new_image do |img|
+  link "NUEVA IMG", new_imagen_path(img)
+end
+
 # crumb :project_issues do |project|
 #   link "Issues", project_issues_path(project)
 #   parent :project, project

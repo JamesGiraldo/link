@@ -1,0 +1,9 @@
+- flag = false
+- cont = 0
+- @imagenes.ids.each do |con|
+  - if flag
+    %li{"data-slide-to" => "#{cont}", "data-target" => "#carouselExampleCaptions"}
+  - else
+    %li.active{"data-slide-to" => "#{cont}", "data-target" => "#carouselExampleCaptions"}
+    - flag = true
+  - cont = cont + 1

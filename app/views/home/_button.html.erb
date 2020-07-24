@@ -1,0 +1,4 @@
+<h1> <%= img.title %> </h1>
+<p> <%= img.description %> </p>
+<%= link_to "", edit_imagen_path(img), class: "fa fa-wrench btn btn-warning", title: "Editar?"%>
+<%= link_to '', [img], method: :delete, data: { confirm: "Estas Seguro?" }, class:"fa fa-trash  btn btn-danger", title: "Eliminar?"%>

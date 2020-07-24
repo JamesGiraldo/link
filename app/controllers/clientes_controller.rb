@@ -15,11 +15,11 @@ class ClientesController < ApplicationController
   def create
     @cliente = Cliente.new(cliente_params)
     if @cliente.save
-      flash[:success] = "Gracias Por Suscribirte #{@cliente.nombre.upcase}.!"
-      redirect_to root_path
+      flash[:success] = t("cliente.created")
+      redirect_to '/'
     else
-      flash[:alert] = t('.alert')
-      render :new
+      flash[:alert] = t("cliente.errores")
+      redirect_to '/'
     end
   end
 

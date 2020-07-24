@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="offset-md-1 col-md-10">
+      <div class="card p-5">
+        <div class="card-body">
+          <h1 class="mb-4 text-center"> <%= "#{title} Imagen" %> </h1>
+          <%= simple_form_for [@imagen] do |f| %>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <%= f.label :Titulo %>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <%= f.input :title , label: false , class: "form-control"%>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <%= f.label :Imagen %>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <%= f.input :avatar,  label: false, requerid: true, class: "form-control" %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-md-3 col-md-4">
+                <div class="form-group">                  
+                  <%= f.button :submit, "Enviar",  class: "btn btn-outline-info btn-block" %>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <%= link_to "Atras", root_path , class:"btn btn-outline-dark btn-block" %>
+                </div>
+              </div>
+            </div>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
