@@ -1,0 +1,36 @@
+.py-5.bg-dark.text-white.footer
+  .container
+    %h2.text-center SUSCRÍBETE A NUESTRO SERVICIOS
+    %p.text-center y recibe toda la información de nuestras promociones y nuestros productos
+    .container.text-center
+      =link_to "SUSCRÍBETE", new_cliente_path, class: "btn btn-outline-success"
+  %hr.raya/
+  .container
+    .row
+      .col-md-6.text-center.align-self-center
+        %p.mb-5
+          %strong Link Marketing
+          = succeed "  Calle 80 # 46 - 112 " do
+            %br/
+          = succeed " Barranquilla / Colombia " do
+            %br/
+          %br/
+          %abbr{:title => "Teléfono"} Fijo:
+          +57 3853400
+          = succeed " Línea Gratuita 018000 918 286 " do
+            %br/
+        .my-3.row
+          .col-md-3
+            %a{:href => "https://www.facebook.com", :title => "Contactanos En Facebook", :target => "_blank"}
+              %i.fa.fa-fw.fa-facebook.fa-3x.color-1
+          .col-md-3
+            %a{:href => "https://wa.me/573126655007?text=Me%20Interesa%20El%20Desarrollo%20Que%20Estás%20Haciendo", :title => "Contactanos En WhatsApp", :target => "_blank"}
+              %i.fa.fa-fw.fa-whatsapp.fa-3x.color-1
+          .col-md-3
+            %a{:href => "https://twitter.com", :title => "Contactanos En Twitter", :target => "_blank"}
+              %i.fa.fa-fw.fa-twitter.fa-3x.color-1
+          .col-md-3
+            %a{:href => "http://instagram.com", :title => "Contactanos En Instagram", :target => "_blank"}
+              %i.fa.fa-fw.fa-instagram.fa-3x.color-1
+      .col-md-6.p-0.Veamos
+        %img.img-fluid{:src => "#{image_url 'logo.png'}"}/
