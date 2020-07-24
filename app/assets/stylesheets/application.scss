@@ -20,11 +20,15 @@
    box-sizing: border-box;
    text-decoration:none;
    list-style:none;
-   background: #060606;
-   color: white;
    margin:0;
    padding:0;
  }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.footer{
+  background-color: #000000 !important;
+}
  .dorime{
    background: black !important;
    border: 1px solid #5d5d5d;
@@ -33,10 +37,12 @@
  .color-0{
    background: #000 !important;
  }
+ .color-1{
+   color: #258a9d;
+ }
  .ir-arriba{
    display: none;
    padding: 20px;
-   background: #fcae70;
    font-size: 20px;
    color: #fff;
    cursor: pointer;
@@ -44,12 +50,41 @@
    bottom: 35px;
    right: 20px;
    border-radius: 35px;
-   background: url('flecha.png');
+   border: 2px solid #f8006b;
+   background: url('flecha2.jpg');
    background-size: cover;
  }
  .ir-arriba:hover{
-   border: 2px solid #fcae70;
+   border: 2px solid #f8006b;
    -webkit-box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
    -moz-box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
    box-shadow: 13px 13px 31px -6px rgba(0,0,0,0.77);
  }
+
+ .breadcrumbpropio{
+   background: #ded9d9;
+   border-radius: 6px;
+   padding: 10px;
+   margin-top: 15px;
+ }
+
+.aja{
+  border-radius: 20px !important;
+  padding: 10px;
+}
+.raya{
+  background: white;
+}
+.form-sus{
+  padding: 10px !important;
+}
+.form-control{
+  border-radius: 20px !important;
+  padding: 10px 15px 7px !important;
+}
+.label-sus{
+  margin-left: 20px;
+}
+.btn{
+  border-radius: 15px !important;
+}
