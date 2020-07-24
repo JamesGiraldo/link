@@ -40,6 +40,9 @@ a:link, a:visited, a:active {
  .color-1{
    color: #258a9d;
  }
+ .jaja{
+   display: none !important;
+ }
  .ir-arriba{
    display: none;
    padding: 20px;
@@ -87,4 +90,7 @@ a:link, a:visited, a:active {
 }
 .btn{
   border-radius: 15px !important;
+}
+.carousel-inner {
+  border-radius: 10px !important;
 }

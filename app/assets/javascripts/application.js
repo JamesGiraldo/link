@@ -16,7 +16,6 @@
 //= require popper
 //= require toastr/toastr.min.js
 //= require bootstrap
-//= require sweetalert2.all.js
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
   $('#ir-arriba').click(function(e){

@@ -1,0 +1,34 @@
+<% @imagenes.each do |img| %>
+ <div class="col-md-3">
+   <div class="box card mb-3 h-100">     
+      <div class="card-body">
+          <%= image_tag img.avatar.url(:thumb) , class: "card-img-top w-100"%>       
+     </div>
+     <div class="card-footer">
+       <div class="row">
+         <div class="col-6">
+           <div class="botonContainer">
+             <%= link_to edit_imagen_path(img),  class: "btn btn-warning" do %>
+               <%= fa_icon 'pencil-square-o' %>
+             <% end %>
+           </div>
+         </div>
+         <div class="col-6">
+           <div class="botonContainer">
+             <%= link_to imagen_path(img), method: :delete, data: {confirm: "¿Esta Seguro De Eliminar La Imagen?",
+                         mensaje: 'La imagen se borrara definitivamente'}, class: "btn btn-danger" do %>
+               <%= fa_icon 'trash' %>
+             <% end %>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<%end%>
+<%unless @imagenes.present?%>
+  <h1 class="text-center">No Hay Fotos Disponibles</h1>
+  <div class="container text-center">
+    <%= link_to "Agregar", new_imagen_path(@imagen), class: "btn btn-outline-success"%>
+  </div>
+<%end%>

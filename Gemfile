@@ -78,3 +78,8 @@ gem 'rails-assets-bootstrap-sweetalert', source: 'https://rails-assets.org'
 gem 'sweet-alert-confirm'
 gem 'gretel', '~> 3.0', '>= 3.0.9'
 gem 'simple_form'
+
+# para fotos
+gem 'carrierwave'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+gem 'paperclip'

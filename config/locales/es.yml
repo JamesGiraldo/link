@@ -1,0 +1,9 @@
+es:
+  cliente:
+    created: "Muchas Gracias Por Suscribirte.!"
+    errores: "Problemas Con La Suscripcion.!"
+  imagen:
+    errores: "Problemas Con La Grabacion.!"
+    created: "Imagen Registrada.!"
+    updated: "Imagen Actualizada.!"
+    deleted: "Imagen Eliminada.!"

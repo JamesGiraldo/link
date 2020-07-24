@@ -1,0 +1,35 @@
+#carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    - flag = false
+    - cont = 0
+    - @imagenes.ids.each do |con|
+      - if flag
+        %li{"data-slide-to" => "#{cont}", "data-target" => "#carouselExampleCaptions"}
+      - else
+        %li.active{"data-slide-to" => "#{cont}", "data-target" => "#carouselExampleCaptions"}
+        - flag = true
+      - cont = cont + 1
+  .carousel-inner
+    - flag = false
+    - @imagenes.each do |imagen|
+      - if flag
+        .carousel-item
+          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
+          .carousel-caption.d-none.d-md-block
+            = render "button", img:imagen
+      - else
+        .carousel-item.active
+          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
+          - flag = true
+          .carousel-caption.d-none.d-md-block
+            = render "button", img:imagen
+    - unless @imagenes.present?
+      %h1.my-4.text-center No Fotos Hay Disponibles
+      .text-center
+        = link_to "Agregar", new_imagen_path(@imagen), class: "btn btn-outline-success my-4"
+  %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
+    %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+    %span.sr-only Previous
+  %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
+    %span.carousel-control-next-icon{"aria-hidden" => "true"}
+    %span.sr-only Next

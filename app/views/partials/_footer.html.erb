@@ -1,0 +1,45 @@
+<div class="py-5 bg-dark text-white footer">
+  <div class="container">
+    <h2 class="text-center">SUSCRÍBETE A NUESTRO SERVICIOS</h2>
+    <p class="text-center">y recibe toda la información de nuestras promociones y nuestros productos</p>
+    <div class="">
+      <%= render "clientes/form", cliente: @cliente, class: "" %>
+      <!-- <%= link_to "SUSCRÍBETE", new_cliente_path, class:"btn btn-outline-success" %> -->
+    </div>
+  </div><hr class="raya">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center align-self-center">
+        <p class="mb-5">
+          <strong>Link Marketing</strong> <br>
+          Calle 80 # 46 - 112 <br>
+          Barranquilla / Colombia <br>
+          <abbr title="Telefono">
+            Fijo: +573152274804 <br>
+          </abbr>
+          Línea Gratuita 018000 918 286
+        </p>
+        <div class="my-3 row">
+        <div class="col-md-3">
+          <a href="https://www.facebook.com" title= "Contactanos En Facebook" target="_blank">
+            <i class="fa fa-fw fa-facebook fa-3x color-1"></i></a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://wa.me/573126655007?text=Me%20Interesa%20El%20Desarrollo%20Que%20Estás%20Haciendo" title= "Contactanos En WhatsApp" target="_blank">
+            <i class="fa fa-fw fa-whatsapp fa-3x color-1"></i></a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://twitter.com" title="Contactanos En Twitter" target="_blank">
+            <i class="fa fa-fw fa-twitter fa-3x color-1"></i></a>
+        </div>
+        <div class="col-md-3">
+          <a href="http://instagram.com" title="Contactanos En Instagram" target="_blank">
+            <i class="fa fa-fw fa-instagram fa-3x color-1"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 p-0 Veamos">
+      <center><%= image_tag 'logo' , class: "img-fluid"%></center>
+    </div>
+  </div>
+</div>
