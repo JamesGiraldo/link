@@ -7,10 +7,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
  storage :file
  # storage :fog
 
- process resize_to_fill: [300, 300]
+ process resize_to_fill: [3000, 3000]
 
  version :thumb, :if => :image? do
-   process resize_to_fill: [136, 160]
+   process resize_to_fill: [1036, 1060]
  end
 
  def store_dir
@@ -18,7 +18,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
  end
 
  def extension_whitelist
-   %w(jpg jpeg png)
+   %w(jpg jpeg gif png)
  end
 
  protected
