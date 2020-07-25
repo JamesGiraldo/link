@@ -3,5 +3,8 @@ Rails.application.routes.draw do
     root 'home#index'
     resources :clientes
     resources :imagenes
+    get 'home/informacion'
+    get 'home/servicios'
+    get 'home/search'
   # end
 end
