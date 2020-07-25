@@ -6,8 +6,7 @@
       <button type="button" onclick="mostar();" class="btn btn-outline-success" id="hazlo">SUSCRIBIRSE</button>
     </div>
     <div class="ocultar" id="myForm">
-      <%= render "clientes/form", cliente: @cliente, id:"ocultar" %>
-      <!-- <%= link_to "SUSCRÍBETE", new_cliente_path, class:"btn btn-outline-success" %> -->
+      <%= render "clientes/form", cliente: @cliente %>
     </div>
   </div><hr class="raya">
   <div class="container">
