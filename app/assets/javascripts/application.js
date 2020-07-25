@@ -32,3 +32,7 @@ $(document).ready(function(){
     }
   });
 });
+function mostar(){
+  document.getElementById('hazlo').style.display= "none";
+  document.getElementById('myForm').style.display= "block";
+}

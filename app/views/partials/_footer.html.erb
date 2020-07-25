@@ -2,8 +2,11 @@
   <div class="container">
     <h2 class="text-center">SUSCRÍBETE A NUESTRO SERVICIOS</h2>
     <p class="text-center">y recibe toda la información de nuestras promociones y nuestros productos</p>
-    <div class="">
-      <%= render "clientes/form", cliente: @cliente, class: "" %>
+    <div class="text-center">
+      <button type="button" onclick="mostar();" class="btn btn-outline-success" id="hazlo">SUSCRIBIRSE</button>
+    </div>
+    <div class="ocultar" id="myForm">
+      <%= render "clientes/form", cliente: @cliente, id:"ocultar" %>
       <!-- <%= link_to "SUSCRÍBETE", new_cliente_path, class:"btn btn-outline-success" %> -->
     </div>
   </div><hr class="raya">
