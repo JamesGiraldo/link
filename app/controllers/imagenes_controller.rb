@@ -46,7 +46,12 @@ class ImagenesController < ApplicationController
   private
 
   def set_imagen
-    @imagen = Imagen.find(params[:id])
+    begin
+      @imagen = Imagen.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      flash[:alert] = t("imagen.noencontrada")
+      redirect_to '/'
+    end
   end
 
   def imagen_params
