@@ -23,9 +23,9 @@
         <a class="nav-link" href="#">LOCALES</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0 color-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-      <button class="btn btn-outline-info my-2 my-sm-0" type="button">Buscar</button>
-    </form>
+    <%= form_tag "/home/search", :method => :get, :class => "form-inline my-2 my-lg-0 color-0" do %>
+      <%= text_field_tag "find", nil , html: {requere: true}, class: "form-control mr-sm-2", title: "Buscar"%> <br>
+      <%= submit_tag "Buscar", class: "btn btn-outline-info my-2 my-sm-0", title: "Buscar"%>
+    <%end%>
   </div>
 </nav>

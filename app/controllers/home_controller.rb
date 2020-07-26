@@ -8,8 +8,9 @@ class HomeController < ApplicationController
 
   def servicios
   end
-  
+
   def search
+    @clientes = Cliente.where("nombre LIKE :query", query: "%#{params[:find]}%")
   end
 
 end

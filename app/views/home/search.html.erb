@@ -1,3 +1,30 @@
 <div class="my-4">
   <%= render "carousel" %>
 </div>
+<div class="py-5">
+  <div class="conatiner">
+    .<div class="row">
+      <% if !@clientes.empty? %>
+        <% @clientes.each do |client| %>
+          <div class="col-md-3 col-sm-12 my-3 h-100">
+            <div class="card">
+              <h1 class="text-center card-title"> <%= client.nombre %> </h1>
+              <p class="text-center"> <%= client.email %>  </p>
+              <p class="text-center"> <%= client.telefono %>  </p>
+              <p class="text-center"> <%= client.ciudad %>  </p>
+            </div>
+          </div>
+        <%end%>
+      <%else%>
+      <div class="col-md-8 offset-md-2">
+        <div class="card my-3">
+          <div class="card-body">
+            <h1 class="text-center">No Hay Coincidencias</h1>
+            <p class="text-center">Lo Siento...</p>
+          </div>
+        </div>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</div>
