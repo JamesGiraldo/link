@@ -18,6 +18,18 @@ crumb :new_image do |img|
   link "NUEVA IMG", new_imagen_path(img)
 end
 
+crumb :informacion do
+  link "INFORMACION", home_informacion_path
+end
+
+crumb :busqueda do
+  link "BUSQUEDA", home_search_path
+end
+
+crumb :servicios do
+  link "SERVICIOS", home_servicios_path
+end
+
 # crumb :project_issues do |project|
 #   link "Issues", project_issues_path(project)
 #   parent :project, project
