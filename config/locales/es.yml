@@ -6,4 +6,5 @@ es:
     errores: "Problemas Con La Grabacion.!"
     created: "Imagen Registrada.!"
     updated: "Imagen Actualizada.!"
+    noencontrada: "Esta Imagen No Existe.!"
     deleted: "Imagen Eliminada.!"

@@ -14,15 +14,15 @@
     - @imagenes.each do |imagen|
       - if flag
         .carousel-item
-          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
           .carousel-caption.d-none.d-md-block
             = render "button", img:imagen
+          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
       - else
         .carousel-item.active
-          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
-          - flag = true
           .carousel-caption.d-none.d-md-block
             = render "button", img:imagen
+          = image_tag imagen.avatar.url(:thumb), class: "d-block w-100"
+          - flag = true
     - unless @imagenes.present?
       %h1.my-4.text-center No Fotos Hay Disponibles
       .text-center

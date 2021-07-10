@@ -83,3 +83,4 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'paperclip'
+gem "haml-rails"

@@ -26,6 +26,9 @@
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+#myForm{
+  display: none;
+}
 .footer{
   background-color: #000000 !important;
 }
@@ -84,6 +87,7 @@ a:link, a:visited, a:active {
 .form-control{
   border-radius: 20px !important;
   padding: 10px 15px 7px !important;
+  color: black !important;
 }
 .label-sus{
   margin-left: 20px;
@@ -93,4 +97,5 @@ a:link, a:visited, a:active {
 }
 .carousel-inner {
   border-radius: 10px !important;
+  // max-height: 450px; //esta es opcional pero hay que definirle el tamaño al slider ese mrk :v
 }
